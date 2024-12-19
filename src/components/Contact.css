@@ -1,0 +1,111 @@
+.contact-section {
+    background-color: #111; /* Dark background for contrast */
+    color: white; /* White text */
+    padding: 40px;
+    border-radius: 8px;
+    margin: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Add shadow for card effect */
+    transition: transform 0.3s ease-in-out; /* Hover animation */
+}
+
+.contact-section:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.contact-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #f0f0f0; /* Slightly lighter color for the title */
+    text-transform: uppercase; /* Make title more prominent */
+}
+
+.contact-info {
+    font-size: 1.2em;
+    margin: 10px 0; /* Reduce vertical spacing */
+    position: relative; /* For icon positioning */
+    display: flex; /* Flexbox for aligning icon and text */
+    align-items: center; /* Vertically align icon and text */
+    justify-content: center; /* Center items */
+    gap: 10px; /* Reduce space between icon and text */
+}
+
+/* Contact Information Hover Effects */
+.contact-info:hover {
+    color: #ffcc00; /* Change color on hover */
+    cursor: pointer;
+}
+
+.contact-link,
+.contact-phone {
+    color: #ffcc00; /* Yellow for email and phone */
+    text-decoration: none;
+    position: relative;
+}
+
+/* Hover effects for links */
+.contact-link:hover,
+.contact-phone:hover {
+    text-decoration: underline;
+    color: #ffaa00;
+}
+
+/* Adjusting Icon Size and Spacing */
+.contact-info .icon {
+    font-size: 1.2em; /* Decrease icon size */
+    color: #ffcc00; /* Match icon color with the text */
+}
+
+/* Button Styling */
+.contact-button {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: #111;
+    padding: 12px 30px;
+    font-size: 1.1em;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #ffaa00;
+}
+
+/* Animation for the Section */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.contact-section {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 1.8em;
+    }
+
+    .contact-info {
+        font-size: 1em;
+    }
+
+    .contact-button {
+        font-size: 1em;
+        padding: 10px 25px;
+    }
+}

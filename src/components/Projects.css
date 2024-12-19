@@ -1,0 +1,98 @@
+/* Projects Page Styles */
+#projects {
+    padding: 50px;
+    margin-bottom: 30px;
+    background-color: #2c3e50; /* Violet background to match your color scheme */
+    border-radius: 20px; /* Rounded corners */
+    color: #fff; /* White text for contrast */
+  }
+  
+  .projects-title {
+    font-size: 2.5em;
+    color: #ffcc00;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Grid layout for projects */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards in a row */
+    gap: 30px;
+    justify-items: center; /* Ensure cards are centered */
+  }
+  
+  /* Project Card Style */
+  .project-card {
+    background-color: #ebeaf1; /* Darker violet for contrast */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Full width inside grid */
+    max-width: 350px; /* Set a max-width for better control */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px); /* Slight hover effect */
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .project-card h3 {
+    font-size: 1.4em;
+    color: #070707; /* Yellow text for heading */
+    margin-top: 15px;
+  }
+  
+  .project-card p {
+    color: #111010; /* Light gray text for description */
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #f9e74d; /* Yellow button color */
+    color: #111; /* Dark text for button */
+    font-size: 1.1em;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card a:hover {
+    background-color: #ffaa00; /* Darker yellow on hover */
+  }
+  
+  /* Hover effect for button */
+  .project-card:hover .project-button {
+    background-color: #ffaa00; /* Change button color on card hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-container {
+      grid-template-columns: 1fr; /* Stack projects on smaller screens */
+    }
+  
+    .project-card {
+      padding: 15px;
+    }
+  
+    .project-card a {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  }
+  

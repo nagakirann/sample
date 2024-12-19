@@ -1,0 +1,107 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #111;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+    background-color: #333;
+}
+
+/* Navbar Left Styles (Profile and Name) */
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.profile-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.navbar-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f0f0f0;
+}
+
+/* Navbar Right Styles (Menu Links) */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between menu items */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.nav-link:hover {
+    color: #ffcc00; /* Hover effect for menu items */
+}
+
+/* Hamburger Menu (Mobile View) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-right {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #111;
+        width: 100%;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar-right.open {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+}

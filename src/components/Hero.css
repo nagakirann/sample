@@ -1,0 +1,64 @@
+/* Hero Section Styles */
+.hero {
+    height: 100vh;
+    background-color: #4b2d9f; /* Violet background to match your color scheme */
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your preferred background image */
+    background-size: cover;
+    background-position: center;
+    color: #101010; /* Light text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Clean and modern font family */
+    border-bottom: 5px solid #a5b310; /* Accent line in yellow to match your color scheme */
+  }
+  
+  /* Hero Heading Styling */
+  .hero h1 {
+    font-size: 4em; /* Larger font for emphasis */
+    font-weight: bold;
+    color: #6e6305; /* Yellow color for heading */
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  /* Hero Paragraph Styling */
+  .hero p {
+    font-size: 1.4em;
+    font-weight: 300; /* Light font weight for readability */
+    margin-bottom: 20px;
+    animation: fadeIn 3s ease-in-out;
+  }
+  
+  /* Animation for Fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px); /* Slide up effect */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      height: 80vh; /* Adjust the height on smaller screens */
+    }
+  
+    .hero h1 {
+      font-size: 2.5em; /* Smaller heading font on mobile */
+    }
+  
+    .hero p {
+      font-size: 1.2em; /* Smaller text on mobile */
+    }
+  }
+  

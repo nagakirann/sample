@@ -1,0 +1,96 @@
+/* Certificates Page Styles */
+#certificates {
+    padding: 50px;
+    background-color: rgb(30, 30, 30); /* Dark background to match the Contact section */
+    border-radius: 20px; /* Rounded corners */
+    color: #fff; /* Text color to contrast with dark background */
+  }
+  
+  .certificates-title {
+    font-size: 2.5em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Flexbox or Grid layout for certificates */
+  .certificates-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid with proper card sizing */
+    gap: 30px;
+    justify-items: center; /* Ensure cards are centered */
+  }
+  
+  /* Certificate Card Style */
+  .certificate-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Ensure cards take full width within their grid cell */
+    max-width: 300px; /* Limit card size for better layout */
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .certificate-card img {
+    width: 100%;
+    max-height: 150px;
+    border-radius: 10px;
+  }
+  
+  .certificate-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .certificate-card p {
+    color: #777;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .certificate-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #ffcc00;
+    color: #111;
+    font-size: 1.1em;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .certificate-button:hover {
+    background-color: #ffaa00;
+  }
+  
+  /* Add hover effects to card */
+  .certificate-card:hover .certificate-button {
+    background-color: #ffaa00; /* Change the button color on card hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .certificates-container {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+  
+    .certificate-card {
+      padding: 15px;
+    }
+  
+    .certificate-button {
+      padding: 10px 20px;
+      font-size: 1em;
+    }
+  }
+  

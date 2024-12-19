@@ -1,0 +1,90 @@
+/* About Page Styles */
+#about {
+    padding: 50px;
+    background-color: #2c3e50; /* Dark background to match the theme */
+    background-position: center;
+    color: #ecf0f1; /* Light text color for contrast */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    font-size: 1.1em; /* Improved font size for readability */
+    line-height: 1.6;
+    border-radius: 15px;
+    margin-bottom: 50px;
+  }
+  
+  /* Heading Styling */
+  #about h2 {
+    text-align: center;
+    font-size: 2.5em; /* Larger font for the heading */
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffcc00; /* Highlight the heading with a matching color */
+    text-transform: uppercase;
+  }
+  
+  /* About Content */
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Image Styling */
+  .about-content img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+    border: 5px solid #ffcc00; /* Yellow border to match the theme */
+    animation: scaleUp 1.5s ease-in-out; /* Animation effect */
+  }
+  
+  /* Animation for Image */
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Text Styling */
+  .about-text {
+    font-size: 1.2em; /* Larger font for better readability */
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.8;
+    color: #ecf0f1;
+    margin-top: 20px;
+    font-weight: normal;
+  }
+  
+  /* Bold key phrases in About content */
+  .about-text span {
+    font-weight: bold;
+    color: #ffcc00; /* Bold text in yellow to highlight key skills */
+  }
+  
+  .about-text p {
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #about {
+      padding: 30px;
+    }
+    
+    .about-content {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .about-text {
+      font-size: 1em; /* Adjust font size on smaller screens */
+    }
+  }
+  
